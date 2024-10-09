@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Sens Ciel - Accueil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Great+Vibes&family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            width: 100%;
+            overflow-x: hidden;
+            background-image: url('https://i.postimg.cc/pXN1qxPb/accueil.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: rgb(10, 10, 10);
+        }
+
+        header {
+            background-color: rgba(0, 128, 128, 0.8);
+            padding: 30px 0;
+            text-align: center;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+        }
+
+        header img {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            font-size: 1.2em;
+            padding: 10px 15px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero h2 {
+            font-family: 'Dancing Script', cursive; /* Same font as "Nos Tarifs" */
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            max-width: 600px;
+            margin: 0 auto;
+            color: white;
+        }
+
+        .section-cards {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            width: 250px;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            backdrop-filter: blur(10px);
+        }
+
+        .card h3 {
+            font-family: 'Dancing Script', cursive; /* Keep this for card headings */
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-size: 1em;
+            margin-bottom: 15px;
+            flex-grow: 1;
+        }
+
+        .card a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgba(0, 128, 128, 0.8);
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: auto;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s;
+        }
+
+        .card a:hover {
+            box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 128, 128, 0.8);
+            color: white;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column; 
+                gap: 15px; 
+            }
+
+            .hero {
+                padding: 50px 10px;
+            }
+
+            .hero h2 {
+                font-size: 2.2em; 
+            }
+
+            .hero p {
+                font-size: 1.2em; 
+            }
+
+            .section-cards {
+                flex-direction: column; 
+                gap: 20px;
+            }
+
+            .card {
+                width: 100%; 
+                height: auto; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://iili.io/dpTj8fR.jpg" alt="Logo Les Sens Ciel">
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="tarif.html">Tarif</a></li>
+            <li><a href="reseaux.html">Réseaux Sociaux</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Bienvenue à Les Sens Ciel</h2>
+    <p>Découvrez un univers de bien-être et de relaxation totale pour apaiser votre corps et votre esprit.</p>
+</section>
+
+<section class="section-cards">
+    <div class="card">
+        <h3>Contact</h3>
+        <p>Besoin d'un rendez-vous ou de plus d'informations ? Contactez-nous en remplissant le formulaire ci-dessous, et nous serons ravis de vous répondre rapidement.</p>
+        <a href="contact.html">Découvrir</a>
+    </div>
+    <div class="card">
+        <h3>Tarif</h3>
+        <p>Explorez nos formules abordables et nos forfaits sur-mesure pour un moment de bien-être.</p>
+        <a href="tarif.html">Voir les tarifs</a>
+    </div>
+    <div class="card">
+        <h3>Réseaux Sociaux</h3>
+        <p>Rejoignez-nous sur nos réseaux pour suivre nos actualités et profiter de conseils bien-être.</p>
+        <a href="reseaux.html">Suivez-nous</a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Les Sens Ciel. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

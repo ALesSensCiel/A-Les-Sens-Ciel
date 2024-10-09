@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Sens Ciel - Tarif</title>
+    <!-- Lien vers les polices -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url('https://i.postimg.cc/G3gkzjRW/tarif.jpg');
+            background-size: cover;
+            background-position: center;
+            color: rgb(5, 5, 5);
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure the body covers the full height */
+        }
+
+        header {
+            background-color: #008080;
+            padding: 20px 0;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 60px;
+            margin-left: 20px;
+        }
+
+        nav {
+            margin-right: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 3em;
+            font-family: 'Great Vibes', cursive;
+            color: #faf4f4;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 40px;
+            flex-grow: 1;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card-content h3 {
+            margin-bottom: 10px;
+            font-size: 1.5em;
+            color: #008080;
+        }
+
+        .card-content p {
+            margin-bottom: 10px;
+            font-size: 1em;
+        }
+
+        .price {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #008080;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #008080;
+            color: white;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        /* Media Queries pour mobiles */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav ul li a {
+                padding: 8px 12px;
+                font-size: 1em;
+            }
+
+            h2 {
+                font-size: 2.5em;
+            }
+
+            .card-container {
+                padding: 20px;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                flex-direction: column;
+                padding: 10px 0;
+            }
+
+            .logo img {
+                height: 50px;
+            }
+
+            nav {
+                margin-right: 0;
+            }
+
+            h2 {
+                font-size: 2em;
+                margin: 20px 0;
+            }
+
+            .card img {
+                height: 150px;
+            }
+
+            .card-content h3 {
+                font-size: 1.3em;
+            }
+
+            .price {
+                font-size: 1.1em;
+            }
+
+            footer {
+                font-size: 0.9em;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="https://iili.io/dpTj8fR.jpg" alt="Les Sens Ciel Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="tarif.html">Tarif</a></li>
+            <li><a href="reseaux.html">Réseaux Sociaux</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<h2>Nos Tarifs</h2>
+
+<section class="card-container">
+    <div class="card">
+        <img src="https://agence-passionnement.com/wp-content/uploads/zen-galet-relaxation-massage-images-photos-gratuites-libres-de-droits-1560x780.jpg" alt="Massage Relaxant">
+        <div class="card-content">
+            <h3>Amma Assis (Dos)</h3>
+            <p>Méthode de détente et de relaxation, pratiqué sur une chaise ergonomique.</p>
+            <p class="price">15€ / 30Min</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVsYXhhdGlvbnxlbnwwfHwwfHx8MA%3D%3D" alt="Soins du Corps">
+        <div class="card-content">
+            <h3>Massage Dos/Nuque</h3>
+            <p>Un massage ciblé sur le dos et la nuque, parfait pour soulager les tensions accumulées et retrouver une sensation de légèreté.</p>
+            <p class="price">35€ / 30Min</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://www.thalasso.com/media/cache/fo_gallery_L_16-9/uploads/media/massage-californien-corps-5ee8c401d72b9.jpeg" alt="Soins du Visage">
+        <div class="card-content">
+            <h3>Massage Dos</h3>
+            <p>Laissez la tension s'évaporer avec un massage du dos relaxant.</p>
+            <p class="price">30€ / 30min</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://www.spassima.com/wp-content/uploads/2020/04/les-ateliers.jpg" alt="Massage aux Huiles Essentielles">
+        <div class="card-content">
+            <h3>Massage Haut (buste, dos)</h3>
+            <p>Détendez-vous profondément grâce à un massage du buste et du dos, parfait pour rééquilibrer votre énergie.</p>
+            <p class="price">40€ / 45Min</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://pur-et-zen.com/themes/pur-et-zen/assets/css//images/PurEtZen_massages_solo.jpg" alt="Gommage Corporel">
+        <div class="card-content">
+            <h3>Massage Jambes Entières</h3>
+            <p>Profitez d'un massage des jambes entières, une expérience revitalisante qui soulage la fatigue, stimule la circulation et vous laisse une sensation de bien-être.</p>
+            <p class="price">25€ / 30Min</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://medias.bpdm-beaute.com/medium/defaut/massage-detente/massage-pieds-reflexologie-2.jpg" alt="Massage Suédois">
+        <div class="card-content">
+            <h3>Réflexologie Plantaire</h3>
+            <p>Une expérience où chaque pression sur vos pieds libère les tensions, favorise la circulation et stimule l'équilibre global du corps.</p>
+            <p class="price">35€ / 30Min</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://sensation-zen.fr/wp-content/uploads/2021/10/Les-soins-du-visage-pour-la-vente-de-produits.jpg-600x338.webp" alt="Massage Thaï">
+        <div class="card-content">
+            <h3>Massage Complet (Corp entier)</h3>
+            <p>Laissez-vous envelopper dans une détente absolue avec notre massage complet, retrouver tout l'équilibres essentielles de votre corp.</p>
+            <p class="price">45€ / 60Min</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Les Sens Ciel. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

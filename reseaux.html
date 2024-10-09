@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Les Sens Ciel - Réseaux Sociaux</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            width: 100%;
+            overflow-x: hidden;
+            background-image: url('https://i.postimg.cc/50PrNFCZ/r-seau.jpg');
+            background-size: cover;
+            background-position: center;
+            color: rgb(2, 2, 2);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure the body covers the full height */
+        }
+
+        header {
+            background-color: #008080;
+            padding: 10px 0; /* Réduit le padding pour mobile */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap; /* Permet au contenu de se réorganiser sur mobile */
+        }
+
+        .logo {
+            margin-left: 20px;
+        }
+
+        .logo img {
+            height: 40px; /* Ajuste la taille du logo pour mobile */
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end; /* Aligner le menu à droite */
+            margin-right: 20px; /* Espacement entre le menu et le bord */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px; /* Réduit l'espace entre les éléments du menu */
+            flex-wrap: wrap; /* Permet au menu de se réorganiser sur mobile */
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            padding: 10px 12px; /* Réduit le padding pour mobile */
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 30px 20px; /* Réduit le padding pour mobile */
+            flex-grow: 1; /* Allow the hero section to grow */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2 {
+            color: white;
+            margin-bottom: 10px;
+            font-size: 2em; /* Réduit la taille du titre pour mobile */
+            font-family: 'Great Vibes', cursive; /* Police élégante utilisée */
+        }
+
+        .hero p {
+            font-size: 1em; /* Taille de police ajustée pour mobile */
+            margin-bottom: 20px;
+        }
+
+        .facebook-button {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            background-color: #3b5998;
+            border: none;
+            padding: 12px 25px; /* Augmente légèrement le padding pour les boutons */
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+            font-size: 1.2em;
+        }
+
+        .facebook-button:hover {
+            background-color: #2d4373;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #008080;
+            color: white;
+            width: 100%;
+            position: relative;
+        }
+
+        /* Ajout de styles pour améliorer la responsivité */
+        @media (max-width: 600px) {
+            h2 {
+                font-size: 1.8em; /* Ajuste la taille du titre pour les petits écrans */
+            }
+
+            .facebook-button {
+                font-size: 1em; /* Réduit la taille du texte du bouton pour mobile */
+                padding: 10px 20px; /* Réduit le padding du bouton pour mobile */
+            }
+
+            nav ul {
+                flex-direction: column; /* Aligne les éléments du menu verticalement sur mobile */
+                margin-right: 0; /* Réinitialise la marge pour mobile */
+            }
+
+            nav ul li {
+                margin: 5px 0; /* Ajoute un espace entre les éléments du menu */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="https://iili.io/dpTj8fR.jpg" alt="Logo Les Sens Ciel">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="tarif.html">Tarif</a></li>
+            <li><a href="reseaux.html">Réseaux Sociaux</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Suivez-nous sur nos réseaux sociaux</h2>
+    <p>Restez connecté et découvrez nos actualités !</p>
+    <a class="facebook-button" href="https://www.facebook.com/birnadia">
+        <i class="fab fa-facebook-f"></i> Facebook
+    </a>
+</section>
+
+<footer>
+    <p>&copy; 2024 Les Sens Ciel. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
